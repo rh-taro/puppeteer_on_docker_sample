@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pup:
+    build: .
+    volumes:
+      - .:/app:delegated
+      - .:/app/node_modules
+    stdin_open: true
+    tty: true
+    command: /bin/sh
